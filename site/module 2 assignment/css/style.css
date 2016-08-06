@@ -1,0 +1,92 @@
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 175%;
+  text-align: center;
+  margin: 20px;
+}
+
+section {
+  position: relative;
+  float: left;
+  background-color: rgba(128, 128, 128, 0.3);
+  margin: 1% ;
+  border: 1px solid black;
+}
+
+h2 {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border: 1px solid black;
+  text-align: center;
+  width: 120px;
+  font-size: 125%;
+  padding: 5px;
+}
+
+.section1 h2{
+  background-color: #A52A2A;
+}
+
+.section2 h2{
+  background-color: #DEB887;
+}
+
+.section3 h2{
+  background-color: #5F9EA0;
+}
+
+
+p {
+  padding: 50px 10px 20px 10px;
+}
+
+
+/********** desktop **********/
+@media (min-width: 992px) {
+  .desktop-4 {
+    width: 30%;
+  }
+  .section1 {
+    margin-left: 3%;
+  }
+  .section3 {
+    margin-right: 3%;
+  }
+}
+
+/********** tablet **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .tablet-6 {
+    width: 46%;
+  }
+  .tablet-12 {
+    width: 94%;
+  }
+  .section1 {
+    margin-left: 3%;
+  }
+  .section2 {
+    margin-right: 3%;
+  }
+  .section3 {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+}
+
+/********** mobile **********/
+@media (max-width: 767px) {
+  .mobile-12 {
+    width: 94%;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+}
