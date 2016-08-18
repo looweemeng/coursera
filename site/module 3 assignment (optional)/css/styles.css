@@ -1,4 +1,5 @@
 body {
+  box-sizing: border-box;
   font-size: 16px;
   color: #fff;
   background-color: #61122f;
@@ -43,13 +44,44 @@ body {
 
 /* MAIN CONTENT */
 h2 {
-  margin: 1em auto;
+  margin: 20px auto;
 }
-#main-content .row{
-  height: 1000px;
+
+h3 {
+  margin: 10px auto;
+}
+
+#chicken, #beef, #sushi {
+  position: relative;
+  height: 700px;
+  padding: 20px;
   border: 2px solid #3F0C1F;
-  margin: 2% auto;
+  margin: 5px;
   overflow: auto;
 }
 
+#chicken span, #beef span, #sushi span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 1em;
+  font-size: 0.8em;
+}
 /* END MAIN CONTENT */
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+}
+
